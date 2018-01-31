@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itamarati_ControleDeProducao.View", "Itamarati_ControleDeProducao\Itamarati_ControleDeProducao.View.csproj", "{067E343A-0644-4B68-B503-BFD2CD6527B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itamarati_ControleDeProducao.DAO", "Itamarati_ControleDeProducao.DAO\Itamarati_ControleDeProducao.DAO.csproj", "{B2D53009-9269-4646-9C5C-7C7990AC22D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itamarati_ControleDeProducao.DTO", "Itamarati_ControleDeProducao.DTO\Itamarati_ControleDeProducao.DTO.csproj", "{F8102E87-936B-4F1D-BEA4-D8CE0AE609F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itamarati_ControleDeProducao.Model", "Itamarati_ControleDeProducao.Model\Itamarati_ControleDeProducao.Model.csproj", "{E1E250AB-7FBE-42D0-98DB-3DCA18D33A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itamarati_ControleDeProducao.Controller", "Itamarati_ControleDeProducao.Controller\Itamarati_ControleDeProducao.Controller.csproj", "{EFC65A10-DC5A-424C-B4EB-B126EC97C39D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Itamarati_ControleDeProducao.Setup", "Itamarati_ControleDeProducao.Setup\Itamarati_ControleDeProducao.Setup.vdproj", "{5F512B3A-6D73-4501-BF3D-5B10D441AB5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{067E343A-0644-4B68-B503-BFD2CD6527B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067E343A-0644-4B68-B503-BFD2CD6527B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067E343A-0644-4B68-B503-BFD2CD6527B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067E343A-0644-4B68-B503-BFD2CD6527B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D53009-9269-4646-9C5C-7C7990AC22D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D53009-9269-4646-9C5C-7C7990AC22D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D53009-9269-4646-9C5C-7C7990AC22D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D53009-9269-4646-9C5C-7C7990AC22D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8102E87-936B-4F1D-BEA4-D8CE0AE609F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8102E87-936B-4F1D-BEA4-D8CE0AE609F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8102E87-936B-4F1D-BEA4-D8CE0AE609F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8102E87-936B-4F1D-BEA4-D8CE0AE609F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1E250AB-7FBE-42D0-98DB-3DCA18D33A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E250AB-7FBE-42D0-98DB-3DCA18D33A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E250AB-7FBE-42D0-98DB-3DCA18D33A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E250AB-7FBE-42D0-98DB-3DCA18D33A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC65A10-DC5A-424C-B4EB-B126EC97C39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC65A10-DC5A-424C-B4EB-B126EC97C39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC65A10-DC5A-424C-B4EB-B126EC97C39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC65A10-DC5A-424C-B4EB-B126EC97C39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F512B3A-6D73-4501-BF3D-5B10D441AB5F}.Debug|Any CPU.ActiveCfg = Debug
+		{5F512B3A-6D73-4501-BF3D-5B10D441AB5F}.Debug|Any CPU.Build.0 = Debug
+		{5F512B3A-6D73-4501-BF3D-5B10D441AB5F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

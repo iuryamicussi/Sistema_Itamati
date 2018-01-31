@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{067E343A-0644-4B68-B503-BFD2CD6527B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Itamarati_ControleDeProducao</RootNamespace>
+    <AssemblyName>Itamarati_ControleDeProducao</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Itamarati Icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\frm_CadastroDeGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frm_CadastroDeGrupo.designer.cs">
+      <DependentUpon>frm_CadastroDeGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frm_CadastroDeInsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frm_CadastroDeInsumo.designer.cs">
+      <DependentUpon>frm_CadastroDeInsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frm_CadastroDeProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frm_CadastroDeProduto.designer.cs">
+      <DependentUpon>frm_CadastroDeProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frm_CadastroDeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frm_CadastroDeUsuario.Designer.cs">
+      <DependentUpon>frm_CadastroDeUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frm_ImportaComposicaoDeOutroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frm_ImportaComposicaoDeOutroProduto.Designer.cs">
+      <DependentUpon>frm_ImportaComposicaoDeOutroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controle do Sistema\frm_AlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle do Sistema\frm_AlterarSenha.Designer.cs">
+      <DependentUpon>frm_AlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controle do Sistema\frm_TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle do Sistema\frm_TelaPrincipal.Designer.cs">
+      <DependentUpon>frm_TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fonte de Dados\FonteDeDadosDosRelatorios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FonteDeDadosDosRelatorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Manutenção\frm_ControleDeProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manutenção\frm_ControleDeProducao.designer.cs">
+      <DependentUpon>frm_ControleDeProducao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controle do Sistema\frm_TelaDeAcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle do Sistema\frm_TelaDeAcesso.Designer.cs">
+      <DependentUpon>frm_TelaDeAcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatório\frmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatório\frmRelatorio.Designer.cs">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cadastros\frm_CadastroDeGrupo.resx">
+      <DependentUpon>frm_CadastroDeGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frm_CadastroDeInsumo.resx">
+      <DependentUpon>frm_CadastroDeInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frm_CadastroDeProduto.resx">
+      <DependentUpon>frm_CadastroDeProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frm_CadastroDeUsuario.resx">
+      <DependentUpon>frm_CadastroDeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frm_ImportaComposicaoDeOutroProduto.resx">
+      <DependentUpon>frm_ImportaComposicaoDeOutroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle do Sistema\frm_AlterarSenha.resx">
+      <DependentUpon>frm_AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle do Sistema\frm_TelaPrincipal.resx">
+      <DependentUpon>frm_TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manutenção\frm_ControleDeProducao.resx">
+      <DependentUpon>frm_ControleDeProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controle do Sistema\frm_TelaDeAcesso.resx">
+      <DependentUpon>frm_TelaDeAcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatório\frmRelatorio.resx">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatório\Arquivos\ControleDeProducao.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Fonte de Dados\FonteDeDadosDosRelatorios.xsc">
+      <DependentUpon>FonteDeDadosDosRelatorios.xsd</DependentUpon>
+    </None>
+    <None Include="Fonte de Dados\FonteDeDadosDosRelatorios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FonteDeDadosDosRelatorios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Fonte de Dados\FonteDeDadosDosRelatorios.xss">
+      <DependentUpon>FonteDeDadosDosRelatorios.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Itamarati_ControleDeProducao.Controller\Itamarati_ControleDeProducao.Controller.csproj">
+      <Project>{efc65a10-dc5a-424c-b4eb-b126ec97c39d}</Project>
+      <Name>Itamarati_ControleDeProducao.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Itamarati_ControleDeProducao.DTO\Itamarati_ControleDeProducao.DTO.csproj">
+      <Project>{f8102e87-936b-4f1d-bea4-d8ce0ae609f3}</Project>
+      <Name>Itamarati_ControleDeProducao.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Itamarati_ControleDeProducao.Model\Itamarati_ControleDeProducao.Model.csproj">
+      <Project>{e1e250ab-7fbe-42d0-98db-3dca18d33a99}</Project>
+      <Name>Itamarati_ControleDeProducao.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CDI_Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itamarati_ArtefatosDePapel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227548_circle-add-plus-new-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227555_circle-add-plus-new-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227522_editor-floopy-dish-save-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227342_other-arrow-left-other-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227217_common-search-lookup-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227290_editor-trash-delete-recycle-bin-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eu3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227460_common-calendar-month-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460227589_common-login-enter-signin-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460617694_circle-edit-pen-pencil-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460618169_device-projector-screen-content-chart-presentation-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1461298389_editor-trash-delete-recycle-bin-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1461311790_editor-trash-delete-recycle-bin-glyph.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Itamarati Icone.ico" />
+    <None Include="Resources\Imprimir_36.png" />
+    <Content Include="Resources\TelaPrincipal.jpg" />
+    <None Include="Resources\1461896514_circle-arrow_down-download-glyph.png" />
+    <None Include="Resources\Usuario_Logo1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

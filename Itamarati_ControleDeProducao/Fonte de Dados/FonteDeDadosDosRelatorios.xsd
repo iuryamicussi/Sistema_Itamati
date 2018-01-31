@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FonteDeDadosDosRelatorios" targetNamespace="http://tempuri.org/FonteDeDadosDosRelatorios.xsd" xmlns:mstns="http://tempuri.org/FonteDeDadosDosRelatorios.xsd" xmlns="http://tempuri.org/FonteDeDadosDosRelatorios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.Itamarati_ControleDeProducao.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tar_EstruturaDoRelatorioDeProducao" GeneratorDataComponentClassName="tar_EstruturaDoRelatorioDeProducao" Name="ds_EstruturaDoRelatorioDeProducao" UserDataComponentName="tar_EstruturaDoRelatorioDeProducao">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        composicaodoproduto.QuantidadeUtilizada, grupo.CodigoDoGrupo, grupo.NomeDoGrupo, produto.DescricaoDoProduto, produto.CodigoDoProduto, insumo.CodigoDoInsumo, insumo.NomeDoInsumo, 
+                         insumo.UnidadeDeMedidaDoInsumo, insumo.ValorUnitarioDaUltimaCompraDoInsumo
+FROM            composicaodoproduto, insumo, produto, grupo
+WHERE        composicaodoproduto.CodigoDoInsumo = insumo.CodigoDoInsumo AND composicaodoproduto.CodigoDoProduto = produto.CodigoDoProduto</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="QuantidadeUtilizada" DataSetColumn="QuantidadeUtilizada" />
+              <Mapping SourceColumn="CodigoDoGrupo" DataSetColumn="CodigoDoGrupo" />
+              <Mapping SourceColumn="NomeDoGrupo" DataSetColumn="NomeDoGrupo" />
+              <Mapping SourceColumn="DescricaoDoProduto" DataSetColumn="DescricaoDoProduto" />
+              <Mapping SourceColumn="CodigoDoProduto" DataSetColumn="CodigoDoProduto" />
+              <Mapping SourceColumn="CodigoDoInsumo" DataSetColumn="CodigoDoInsumo" />
+              <Mapping SourceColumn="NomeDoInsumo" DataSetColumn="NomeDoInsumo" />
+              <Mapping SourceColumn="UnidadeDeMedidaDoInsumo" DataSetColumn="UnidadeDeMedidaDoInsumo" />
+              <Mapping SourceColumn="ValorUnitarioDaUltimaCompraDoInsumo" DataSetColumn="ValorUnitarioDaUltimaCompraDoInsumo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FonteDeDadosDosRelatorios" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FonteDeDadosDosRelatorios" msprop:Generator_UserDSName="FonteDeDadosDosRelatorios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ds_EstruturaDoRelatorioDeProducao" msprop:Generator_TableClassName="ds_EstruturaDoRelatorioDeProducaoDataTable" msprop:Generator_TableVarName="tableds_EstruturaDoRelatorioDeProducao" msprop:Generator_TablePropName="ds_EstruturaDoRelatorioDeProducao" msprop:Generator_RowDeletingName="ds_EstruturaDoRelatorioDeProducaoRowDeleting" msprop:Generator_RowChangingName="ds_EstruturaDoRelatorioDeProducaoRowChanging" msprop:Generator_RowEvHandlerName="ds_EstruturaDoRelatorioDeProducaoRowChangeEventHandler" msprop:Generator_RowDeletedName="ds_EstruturaDoRelatorioDeProducaoRowDeleted" msprop:Generator_UserTableName="ds_EstruturaDoRelatorioDeProducao" msprop:Generator_RowChangedName="ds_EstruturaDoRelatorioDeProducaoRowChanged" msprop:Generator_RowEvArgName="ds_EstruturaDoRelatorioDeProducaoRowChangeEvent" msprop:Generator_RowClassName="ds_EstruturaDoRelatorioDeProducaoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuantidadeUtilizada" msprop:Generator_ColumnVarNameInTable="columnQuantidadeUtilizada" msprop:Generator_ColumnPropNameInRow="QuantidadeUtilizada" msprop:Generator_ColumnPropNameInTable="QuantidadeUtilizadaColumn" msprop:Generator_UserColumnName="QuantidadeUtilizada" type="xs:float" minOccurs="0" />
+              <xs:element name="CodigoDoGrupo" msprop:Generator_ColumnVarNameInTable="columnCodigoDoGrupo" msprop:Generator_ColumnPropNameInRow="CodigoDoGrupo" msprop:Generator_ColumnPropNameInTable="CodigoDoGrupoColumn" msprop:Generator_UserColumnName="CodigoDoGrupo" type="xs:int" />
+              <xs:element name="NomeDoGrupo" msprop:Generator_ColumnVarNameInTable="columnNomeDoGrupo" msprop:Generator_ColumnPropNameInRow="NomeDoGrupo" msprop:Generator_ColumnPropNameInTable="NomeDoGrupoColumn" msprop:Generator_UserColumnName="NomeDoGrupo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DescricaoDoProduto" msprop:Generator_ColumnVarNameInTable="columnDescricaoDoProduto" msprop:Generator_ColumnPropNameInRow="DescricaoDoProduto" msprop:Generator_ColumnPropNameInTable="DescricaoDoProdutoColumn" msprop:Generator_UserColumnName="DescricaoDoProduto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodigoDoProduto" msprop:Generator_ColumnVarNameInTable="columnCodigoDoProduto" msprop:Generator_ColumnPropNameInRow="CodigoDoProduto" msprop:Generator_ColumnPropNameInTable="CodigoDoProdutoColumn" msprop:Generator_UserColumnName="CodigoDoProduto" type="xs:int" />
+              <xs:element name="CodigoDoInsumo" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCodigoDoInsumo" msprop:Generator_ColumnPropNameInRow="CodigoDoInsumo" msprop:Generator_ColumnPropNameInTable="CodigoDoInsumoColumn" msprop:Generator_UserColumnName="CodigoDoInsumo" type="xs:int" minOccurs="0" />
+              <xs:element name="NomeDoInsumo" msprop:Generator_ColumnVarNameInTable="columnNomeDoInsumo" msprop:Generator_ColumnPropNameInRow="NomeDoInsumo" msprop:Generator_ColumnPropNameInTable="NomeDoInsumoColumn" msprop:Generator_UserColumnName="NomeDoInsumo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnidadeDeMedidaDoInsumo" msprop:Generator_ColumnVarNameInTable="columnUnidadeDeMedidaDoInsumo" msprop:Generator_ColumnPropNameInRow="UnidadeDeMedidaDoInsumo" msprop:Generator_ColumnPropNameInTable="UnidadeDeMedidaDoInsumoColumn" msprop:Generator_UserColumnName="UnidadeDeMedidaDoInsumo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ValorUnitarioDaUltimaCompraDoInsumo" msprop:Generator_ColumnVarNameInTable="columnValorUnitarioDaUltimaCompraDoInsumo" msprop:Generator_ColumnPropNameInRow="ValorUnitarioDaUltimaCompraDoInsumo" msprop:Generator_ColumnPropNameInTable="ValorUnitarioDaUltimaCompraDoInsumoColumn" msprop:Generator_UserColumnName="ValorUnitarioDaUltimaCompraDoInsumo" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
